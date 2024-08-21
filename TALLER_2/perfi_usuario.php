@@ -19,5 +19,7 @@ echo "<br>";
 var_dump("numero de telefono :  " . $telefono);
 echo "<br>";
 var_dump("contante");
+
 var_dump(OCUPACION);
+
 echo "<br>";
