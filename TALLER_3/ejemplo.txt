@@ -1,0 +1,8 @@
+La función file_get_contents() en 
+PHP se utiliza para leer el
+ contenido completo de un 
+ archivo en una cadena. 
+ También puede usarse para 
+ leer el contenido de una URL.
+  Vamos a crear un ejercicio 
+  para practicar su uso.
