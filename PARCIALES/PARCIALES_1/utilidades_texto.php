@@ -1,8 +1,7 @@
 <?php
 function contar_palabras($texto)
 {
-    if ()
-    return $texto;
+    return explode(" ",$texto);
 }
 
 function contar_vocales($texto)
