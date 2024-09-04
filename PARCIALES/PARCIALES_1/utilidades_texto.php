@@ -1,15 +1,14 @@
 <?php
 function contar_palabras($texto)
 {
-    return explode(" ",$texto);
+    return count(explode(" ", $texto));
 }
 
 function contar_vocales($texto)
 {
-    return $texto;
+    return preg_match_all('/[aeiou]/', $texto);
 }
 function invertir_palabras($texto)
 {
-    return $texto;
+    return implode(' ', array_reverse(explode(' ', $texto)));
 }
-?>
