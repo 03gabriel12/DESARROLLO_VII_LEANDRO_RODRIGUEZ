@@ -23,18 +23,16 @@ foreach ($carrito as $array => $key) {
     $descuento_aplicado=calcular_descuento($subtotal);
     $impuesto = aplicar_impuesto($subtotal);
     $total_compra=calcular_total($subtotal,$descuento_aplicado,$impuesto);
-    echo " 
-        $array | $key <br>
-    ";
+    echo "$array | $key <br>";
 }
 
 echo "
-<br><br>
-subtotal de la compra  $subtotal
-<br>
-descuento aplicado $descuento_aplicado
-<br>
-impuesto $impuesto
-<br>
-total de la compra $total_compra
+    <br><br>
+    subtotal de la compra  $subtotal
+    <br>
+    descuento aplicado $descuento_aplicado
+    <br>
+    impuesto $impuesto
+    <br><br>
+    total de la compra $total_compra
 ";

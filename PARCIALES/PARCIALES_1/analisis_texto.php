@@ -10,7 +10,7 @@ $array_frases = ["Hola Mundo", "soy un programador", "tengo mucha Hambre hoy "];
         $inv_palabras = invertir_palabras($data);
         echo "
         <span>
-         frase :  $data 
+        frase :  $data 
         <br>
         cantidad de palabras: $cont_palabras
         <br>
