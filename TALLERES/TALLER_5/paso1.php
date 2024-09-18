@@ -20,12 +20,13 @@ echo "\nCiudades modificadas:\n";
 print_r($ciudades);
 
 // 7. Crear una función que imprima las ciudades en orden alfabético
-function imprimirCiudadesOrdenadas($arr) {
+function imprimirCiudadesOrdenadas($arr)
+{
     $ordenado = $arr;
     sort($ordenado);
     echo "Ciudades en orden alfabético:\n";
     foreach ($ordenado as $ciudad) {
-        echo "- $ciudad\n";
+        //echo "- $ciudad\n";
     }
 }
 
@@ -36,4 +37,24 @@ imprimirCiudadesOrdenadas($ciudades);
 // Ejemplo de uso: contarCiudadesPorInicial($ciudades, 'S') debería retornar 1 (Singapur)
 // Tu código aquí
 
-?>
+
+
+
+
+function contarCiudadesPorInicial($ciudades, $letra_especifica)
+{
+    $x = 0;
+    foreach (count_chars($ciudades, 1) as $key => $value) {
+        if (chr($key) === $letra_especifica) {
+            $x = $value;
+        }
+    }
+    return $x;
+}
+echo "<br> la cantidad de letra especifica <br>";
+$ciudades="Singapur";
+$salida = contarCiudadesPorInicial($ciudades, 'S');
+if ($salida == 0) {
+    echo "no hay letras ingresadas en el string ";
+}
+echo "$salida";
