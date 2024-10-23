@@ -79,6 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Mostrar información dependiendo del rol
             if ($_SESSION['rol'] == 'profesor') {
+
                 echo "<h3>Lista de estudiantes:</h3>";
                 foreach ($listaEstudiantes as $data) {
                     foreach ($data as $key => $valor) {
@@ -117,4 +118,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     echo "Acceso no permitido.";
+
+    // Destruir todas las variables de sesión
+    $_SESSION = array();
+
+    // Destruir la sesión
+    session_destroy();
 }
