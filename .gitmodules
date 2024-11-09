@@ -4,3 +4,6 @@
 [submodule "PARCIALES/PARCIAL_2"]
 	path = PARCIALES/PARCIAL_2
 	url = https://github.com/Milagros-Alonzo/PARCIAL_2.git
+[submodule "PARCIALES/PARCIAL_4/PARCIAL_4_DSW7"]
+	path = PARCIALES/PARCIAL_4/PARCIAL_4_DSW7
+	url = https://github.com/Milagros-Alonzo/PARCIAL_4_DSW7.git
